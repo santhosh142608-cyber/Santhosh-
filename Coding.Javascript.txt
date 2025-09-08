@@ -1,0 +1,14 @@
+// Example: Auto-update age based on birth year
+const birthYear = 2003; // <-- change to your actual birth year
+const currentYear = new Date().getFullYear();
+const ageElement = document.getElementById("age");
+
+if (ageElement) {
+  ageElement.textContent = `🎂 Age: ${currentYear - birthYear}`;
+}
+
+// Example: Update location dynamically
+const locationElement = document.getElementById("location");
+if (locationElement) {
+  locationElement.textContent = "📍 Coimbatore, Tamil Nadu"; // <-- change to your location
+}
